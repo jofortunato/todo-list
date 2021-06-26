@@ -12,7 +12,7 @@ const task = () => {
         title: 'Untitled',
         description: '',
         isTask: false,
-        dueDate: null,
+        dueDate: new Date(),
         priority: 1,
         isDone: false,
         project: 'Personal',
