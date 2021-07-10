@@ -12,8 +12,8 @@ Part of my journey learning to create web apps. This part of the [The Odin Proje
 
 ### To-do:
 
-- [ ] Create the localStorage module - its main purpose is to get, set and delete data from localStorage;
-- [ ] Create the Task module - its aim is to implement CRUD functionalities for tasks;
+- [x] Create the localStorage module - its main purpose is to get, set and delete data from localStorage;
+- [x] Create the Task module - its aim is to implement CRUD functionalities for tasks;
 - [ ] Create the Project module - its aim is to implement CRUD functionalities for projects;
 - [ ] Create basic UI in a separate DOM module - it should be able to do the following: view all projects, view all todos in each project (probably just the title and duedate), expand a single todo to see/edit its details and delete a todo.
 
