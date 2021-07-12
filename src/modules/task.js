@@ -1,8 +1,10 @@
 import dbConnect from './db-connect';
+import projectModel from './project'
 
 const task = () => {
 
     const tasksStore = dbConnect('tasks-storage');
+    const projectModule = projectModel();
     const getAllTasks = () => tasksStore.getData();
     const delTask = index => tasksStore.delData(index);
 
@@ -22,7 +24,8 @@ const task = () => {
         const newTask = defaultTask;
         Object.assign(newTask, newTaskInputData);
 
-        /*Call project model to set new project from newtask data*/
+        const {project} = newTask;
+        projectModule.setProject(project);
 
         return tasksStore.setData(newTask, index);
     }
